@@ -1,0 +1,142 @@
+/* Меню боковой панели */
+.sidepanel {
+  height: 250px; /* Укажите высоту */
+  width: 0; /* 0 ширина-измените это с помощью JavaScript */
+  position: fixed; /* Оставаться на месте */
+  z-index: 1; /* Оставайтесь на вершине */
+  top: 78px;
+  left: 0;
+  background-color: rgb(157, 170, 199); /* Черный */
+  overflow-x: hidden; /* Отключить горизонтальную прокрутку */
+  padding-top: 60px; /* Поместите содержимое 60px сверху */
+  transition: 0.5s; /* 0.5 секунды эффект перехода для скольжения в боковой панели */
+ }
+
+ .sidepanel.open {
+  width: 350px;
+  height: 100%;
+ }
+
+/* Боковая панель ссылок */
+.sidepanel a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #1d1b1b;
+  display: block;
+  transition: 0.3s;
+}
+
+/* При наведении курсора мыши на навигационные ссылки измените их цвет */
+.sidepanel a:hover {
+  color: #f1f1f1;
+}
+
+/* Положение и стиль кнопки закрытия (верхний правый угол) */
+.sidepanel .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+/* Стиль кнопка, которая используется для открытия боковой панели */
+.open-menu-btn {
+  font-size: 14px;
+  cursor: pointer;
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  padding: 10px 15px;
+  border: solid;
+  border-width: 2px;
+ margin-right: 15px;
+}
+
+.openbtn:hover {
+  background-color: #444;
+}
+
+
+
+#header_wrap {
+color: #f1f1f1;
+-webkit-font-smoothing: antialiased;
+margin: 0;
+padding: 15px 10px;
+border: 0;
+font: inherit;
+vertical-align: baseline;
+width: 100%;
+background: linear-gradient(to top, #1e91b4, #3936e9);
+}
+
+.outer {
+  width: 100%;
+}
+
+.header__logo {
+  max-height: 35px;
+  display: block;
+  margin-right: 15px;
+}
+
+ .header{
+   position: relative;
+   display: flex;
+   align-items: center;
+   justify-content: flex-start;
+
+    }
+#footer_wrap {
+  background: #2e519e;
+  color: #ffffff;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  flex: 0 0 auto;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 80px;
+}
+
+div {
+  display: block;
+}
+
+body {
+  box-sizing: border-box;
+  color: #373737;
+  background: #ffffff;
+  font-size: 16px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  margin: 0;
+  height: 100%;
+}
+
+
+
+* {
+	margin: 0;
+	padding: 0;
+}
+html,
+body {
+	height: 100%;
+}
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	min-height: 100%;
+}
+.content {
+	flex: 1 0 auto;
+}
+.footer {
+	flex: 0 0 auto;
+}
+
